@@ -1,0 +1,6 @@
+-- Dados iniciais do Sistema Cinema CRUD.
+--
+-- TODO: definir com o grupo um login administrativo de teste.
+-- TODO: adicionar alguns filmes para testar a busca por ID e por título.
+--
+-- Este arquivo ficou propositalmente sem senhas ou credenciais prontas.
