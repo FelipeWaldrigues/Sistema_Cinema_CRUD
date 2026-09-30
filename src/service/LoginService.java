@@ -1,9 +1,9 @@
-package br.edu.unifebe.cinema.service;
+package service;
 
-import br.edu.unifebe.cinema.dao.AdministradorDAO;
-import br.edu.unifebe.cinema.dao.UsuarioDAO;
-import br.edu.unifebe.cinema.model.Administrador;
-import br.edu.unifebe.cinema.model.Usuario;
+import dao.AdministradorDAO;
+import dao.UsuarioDAO;
+import model.Administrador;
+import model.Usuario;
 
 import java.sql.SQLException;
 import java.util.Optional;
@@ -11,12 +11,12 @@ import java.util.Optional;
 /**
  * Centraliza os dois tipos de autenticação pedidos no enunciado.
  */
-public class AutenticacaoService {
+public class LoginService {
 
     private final UsuarioDAO usuarioDAO;
     private final AdministradorDAO administradorDAO;
 
-    public AutenticacaoService(UsuarioDAO usuarioDAO, AdministradorDAO administradorDAO) {
+    public LoginService(UsuarioDAO usuarioDAO, AdministradorDAO administradorDAO) {
         this.usuarioDAO = usuarioDAO;
         this.administradorDAO = administradorDAO;
     }

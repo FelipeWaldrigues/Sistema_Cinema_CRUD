@@ -1,4 +1,4 @@
-package br.edu.unifebe.cinema.connection;
+package connection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

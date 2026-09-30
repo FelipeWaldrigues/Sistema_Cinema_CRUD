@@ -1,6 +1,6 @@
-package br.edu.unifebe.cinema.dao;
+package dao;
 
-import br.edu.unifebe.cinema.model.Usuario;
+import model.Usuario;
 
 import java.sql.SQLException;
 import java.util.Optional;

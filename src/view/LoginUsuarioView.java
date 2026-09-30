@@ -1,4 +1,4 @@
-package br.edu.unifebe.cinema.view;
+package view;
 
 /**
  * Tela/fluxo de login do cliente.
@@ -10,7 +10,7 @@ package br.edu.unifebe.cinema.view;
 public class LoginUsuarioView {
 
     public void exibir() {
-        // TODO Parte 1: coletar credenciais e chamar AutenticacaoService.
+        // TODO Parte 1: coletar credenciais e chamar LoginService.
         // Login correto -> MenuClienteView.
     }
 }

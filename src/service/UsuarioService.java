@@ -1,18 +1,18 @@
-package br.edu.unifebe.cinema.service;
+package service;
 
-import br.edu.unifebe.cinema.dao.UsuarioDAO;
-import br.edu.unifebe.cinema.model.Usuario;
+import dao.UsuarioDAO;
+import model.Usuario;
 
 import java.sql.SQLException;
 
 /**
  * Reúne as validações do cadastro antes de chamar o DAO.
  */
-public class CadastroUsuarioService {
+public class UsuarioService {
 
     private final UsuarioDAO usuarioDAO;
 
-    public CadastroUsuarioService(UsuarioDAO usuarioDAO) {
+    public UsuarioService(UsuarioDAO usuarioDAO) {
         this.usuarioDAO = usuarioDAO;
     }
 

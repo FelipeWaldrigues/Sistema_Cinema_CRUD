@@ -1,4 +1,4 @@
-package br.edu.unifebe.cinema.view;
+package view;
 
 /**
  * Tela/fluxo de cadastro de novo usuário.
@@ -15,6 +15,6 @@ package br.edu.unifebe.cinema.view;
 public class CadastroUsuarioView {
 
     public void exibir() {
-        // TODO Parte 1: coletar dados, validar e chamar CadastroUsuarioService.
+        // TODO Parte 1: coletar dados, validar e chamar UsuarioService.
     }
 }

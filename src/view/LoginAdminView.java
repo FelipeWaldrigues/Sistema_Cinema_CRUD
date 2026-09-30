@@ -1,4 +1,4 @@
-package br.edu.unifebe.cinema.view;
+package view;
 
 /**
  * Tela/fluxo de login administrativo.
@@ -6,7 +6,7 @@ package br.edu.unifebe.cinema.view;
 public class LoginAdminView {
 
     public void exibir() {
-        // TODO Parte 1: coletar login/senha e chamar AutenticacaoService.
+        // TODO Parte 1: coletar login/senha e chamar LoginService.
         // Login correto -> MenuAdminView.
     }
 }

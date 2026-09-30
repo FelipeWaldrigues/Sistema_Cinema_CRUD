@@ -1,4 +1,4 @@
-package br.edu.unifebe.cinema.view;
+package view;
 
 /**
  * Menu apresentado depois do login administrativo.

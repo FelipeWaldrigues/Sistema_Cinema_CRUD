@@ -1,7 +1,7 @@
-package br.edu.unifebe.cinema.service;
+package service;
 
-import br.edu.unifebe.cinema.dao.FilmeDAO;
-import br.edu.unifebe.cinema.model.Filme;
+import dao.FilmeDAO;
+import model.Filme;
 
 import java.sql.SQLException;
 import java.util.Collections;

@@ -1,4 +1,4 @@
-package br.edu.unifebe.cinema.model;
+package model;
 
 /**
  * Produto principal do Sistema Cinema.

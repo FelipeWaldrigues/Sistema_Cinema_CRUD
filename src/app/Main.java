@@ -1,6 +1,6 @@
-package br.edu.unifebe.cinema;
+package app;
 
-import br.edu.unifebe.cinema.view.MenuPrincipal;
+import view.MenuPrincipal;
 
 /**
  * Ponto de entrada do Sistema Cinema.

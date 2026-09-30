@@ -1,4 +1,4 @@
-package br.edu.unifebe.cinema.view;
+package view;
 
 /**
  * Menu inicial exigido no item A do enunciado.

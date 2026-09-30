@@ -1,4 +1,4 @@
-package br.edu.unifebe.cinema.model;
+package model;
 
 /**
  * Representa um cliente cadastrado no sistema.
