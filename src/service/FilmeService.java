@@ -4,8 +4,8 @@ import dao.FilmeDAO;
 import model.Filme;
 
 import java.sql.SQLException;
-import java.util.Collections;
 import java.util.List;
+import java.util.Optional;
 
 /**
  * Serviço da busca de filmes.
@@ -22,10 +22,14 @@ public class FilmeService {
     }
 
     public List<Filme> buscar(String termo) throws SQLException {
-        // TODO Parte 1:
-        // - se o termo for numérico, buscar por ID;
-        // - caso contrário, buscar por título;
-        // - retornar lista vazia quando não houver resultado.
-        return Collections.emptyList();
+        // Se o termo for numérico, buscar por ID
+        if (termo.matches("\\d+")) {
+            long id = Long.parseLong(termo);
+            Optional<Filme> filme = filmeDAO.buscarPorId(id);
+            return filme.map(List::of).orElse(List.of());
+        }
+        
+        // Caso contrário, buscar por título
+        return filmeDAO.buscarPorTitulo(termo);
     }
 }
