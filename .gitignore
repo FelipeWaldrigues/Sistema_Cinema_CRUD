@@ -5,7 +5,7 @@ bin/
 target/
 build/
 
-
+# IDEs
 .idea/
 *.iml
 .vscode/
@@ -13,20 +13,20 @@ build/
 .classpath
 .project
 
-
+# Banco / credenciais
 .env
 database.properties
 *.db
 
-
+# Sistema operacional
 .DS_Store
 Thumbs.db
 
+# Documento de entrega — nunca versionar
+Projeto Final – Parte 1.md
 
-
+# Testes e mocks — não versionar
 test/
-*.test.java
 
-docs/
-*.md
-
+# API experimental — não versionar
+api/
