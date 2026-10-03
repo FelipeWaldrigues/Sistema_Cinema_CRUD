@@ -5,7 +5,7 @@ bin/
 target/
 build/
 
-# IDEs
+
 .idea/
 *.iml
 .vscode/
@@ -13,11 +13,20 @@ build/
 .classpath
 .project
 
-# Banco / credenciais
+
 .env
 database.properties
 *.db
 
-# Sistema operacional
+
 .DS_Store
 Thumbs.db
+
+
+
+test/
+*.test.java
+
+docs/
+*.md
+
