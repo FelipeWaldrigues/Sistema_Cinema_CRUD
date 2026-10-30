@@ -10,7 +10,7 @@ public class MenuPrincipal {
     private final Scanner scanner;
 
     public MenuPrincipal() {
-        this.scanner = new Scanner(System.in);
+        this.scanner = Entrada.SCANNER;
     }
 
     public void exibir() {

@@ -16,7 +16,7 @@ public class MenuClienteView {
     private final FilmeService filmeService;
 
     public MenuClienteView() {
-        this.scanner = new Scanner(System.in);
+        this.scanner = Entrada.SCANNER;
         this.filmeService = new FilmeService(new FilmeDAO());
     }
 

@@ -21,7 +21,7 @@ public class LoginUsuarioView {
     private final LoginService loginService;
 
     public LoginUsuarioView() {
-        this.scanner = new Scanner(System.in);
+        this.scanner = Entrada.SCANNER;
         this.loginService = new LoginService(new UsuarioDAO(), new AdministradorDAO());
     }
 

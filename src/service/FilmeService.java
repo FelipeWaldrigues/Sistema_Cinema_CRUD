@@ -22,13 +22,16 @@ public class FilmeService {
     }
 
     public List<Filme> buscar(String termo) throws SQLException {
-        // Se o termo for numérico, buscar por ID
-        if (termo.matches("\\d+")) {
+        // Se o termo for numérico, tenta primeiro por ID; se não achar,
+        // cai para o título (ex.: filme chamado "2012").
+        if (termo.matches("\\d{1,18}")) {
             long id = Long.parseLong(termo);
             Optional<Filme> filme = filmeDAO.buscarPorId(id);
-            return filme.map(List::of).orElse(List.of());
+            if (filme.isPresent()) {
+                return List.of(filme.get());
+            }
         }
-        
+
         // Caso contrário, buscar por título
         return filmeDAO.buscarPorTitulo(termo);
     }

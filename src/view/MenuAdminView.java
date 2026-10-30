@@ -10,7 +10,7 @@ public class MenuAdminView {
     private final Scanner scanner;
 
     public MenuAdminView() {
-        this.scanner = new Scanner(System.in);
+        this.scanner = Entrada.SCANNER;
     }
 
     public void exibir() {

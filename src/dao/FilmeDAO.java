@@ -34,7 +34,7 @@ public class FilmeDAO {
     }
 
     public List<Filme> buscarPorTitulo(String titulo) throws SQLException {
-        String sql = "SELECT * FROM filme WHERE titulo LIKE ?";
+        String sql = "SELECT * FROM filme WHERE LOWER(titulo) LIKE LOWER(?)";
         List<Filme> filmes = new ArrayList<>();
         
         try (Connection conn = connection.ConnectionFactory.getConnection();
