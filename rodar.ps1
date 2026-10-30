@@ -12,9 +12,9 @@ chcp 65001 > $null
 [Console]::OutputEncoding = [Text.Encoding]::UTF8
 [Console]::InputEncoding = [Text.Encoding]::UTF8
 
-$java = 'C:\Users\duduf\.jdks\ms-21.0.10\bin'
+
 $fontes = Get-ChildItem -Recurse src -Filter *.java | ForEach-Object { $_.FullName }
-& "$java\javac.exe" -encoding UTF-8 -d out -cp 'lib/*' $fontes
+javac -encoding UTF-8 -d out -cp 'lib/*' $fontes
 if ($LASTEXITCODE -ne 0) { exit 1 }
 
-& "$java\java.exe" '-Dstdout.encoding=UTF-8' -cp 'out;lib/*' app.Main
+java '-Dstdout.encoding=UTF-8' -cp 'out;lib/*' app.Main
