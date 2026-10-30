@@ -10,9 +10,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-/**
- * DAO do produto do sistema: Filme.
- */
 public class FilmeDAO {
 
     public Optional<Filme> buscarPorId(long id) throws SQLException {
@@ -53,17 +50,14 @@ public class FilmeDAO {
     }
 
     public void salvar(Filme filme) throws SQLException {
-        // TODO futuro: opção do menu administrativo.
         throw new UnsupportedOperationException("Cadastro de filme será implementado depois.");
     }
 
     public void atualizar(Filme filme) throws SQLException {
-        // TODO futuro: opção do menu administrativo.
         throw new UnsupportedOperationException("Atualização de filme será implementada depois.");
     }
 
     public void remover(long id) throws SQLException {
-        // TODO futuro: opção do menu administrativo.
         throw new UnsupportedOperationException("Remoção de filme será implementada depois.");
     }
     

@@ -2,11 +2,7 @@ package view;
 
 import java.util.Scanner;
 
-/**
- * Menu apresentado depois do login administrativo.
- */
 public class MenuAdminView {
-
     private final Scanner scanner;
 
     public MenuAdminView() {

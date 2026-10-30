@@ -8,20 +8,7 @@ import service.UsuarioService;
 
 import java.util.Scanner;
 
-/**
- * Tela/fluxo de cadastro de novo usuário (cliente ou administrador).
- *
- * Requisitos mínimos do PDF:
- * - Nome
- * - Sobrenome
- * - Login
- * - Senha
- * - Confirmação de senha
- *
- * O Figma também prevê e-mail, CPF, endereço e caixa postal.
- */
 public class CadastroUsuarioView {
-
     private final Scanner scanner;
     private final UsuarioService usuarioService;
     private final AdministradorService administradorService;

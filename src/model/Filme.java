@@ -1,13 +1,7 @@
 package model;
 
-/**
- * Produto principal do Sistema Cinema.
- *
- * Para a Parte 1, os campos mais importantes são id e titulo, pois a busca
- * exigida no enunciado deve funcionar por código (ID) ou nome.
- */
+// Produto principal do sistema
 public class Filme {
-
     private Long id;
     private String titulo;
     private String genero;

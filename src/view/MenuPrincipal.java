@@ -2,11 +2,7 @@ package view;
 
 import java.util.Scanner;
 
-/**
- * Menu inicial exigido no item A do enunciado.
- */
 public class MenuPrincipal {
-
     private final Scanner scanner;
 
     public MenuPrincipal() {

@@ -4,14 +4,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-/**
- * Centraliza a criação de conexões JDBC.
- *
- * A classe não depende de um banco específico. O driver JDBC do banco
- * escolhido deverá ser adicionado ao projeto posteriormente.
- */
+// Cria conexões com o banco usando as variáveis do .env
 public final class ConnectionFactory {
-
     private ConnectionFactory() {
     }
 

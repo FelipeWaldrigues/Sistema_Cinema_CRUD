@@ -6,11 +6,7 @@ import model.Usuario;
 import java.sql.SQLException;
 import java.util.Optional;
 
-/**
- * Reúne as validações do cadastro antes de chamar o DAO.
- */
 public class UsuarioService {
-
     private final UsuarioDAO usuarioDAO;
 
     public UsuarioService(UsuarioDAO usuarioDAO) {
@@ -18,7 +14,7 @@ public class UsuarioService {
     }
 
     public void cadastrar(Usuario usuario, String confirmacaoSenha) throws SQLException {
-        // 1. Validar campos obrigatórios
+        // Valida campos obrigatórios
         if (usuario.getNome() == null || usuario.getNome().trim().isEmpty()) {
             throw new IllegalArgumentException("Nome é obrigatório.");
         }
@@ -32,18 +28,18 @@ public class UsuarioService {
             throw new IllegalArgumentException("Senha é obrigatória.");
         }
         
-        // 2. Verificar se senha e confirmação são iguais
+        // Verifica se senha e confirmação batem
         if (!usuario.getSenha().equals(confirmacaoSenha)) {
             throw new IllegalArgumentException("Senha e confirmação não conferem.");
         }
         
-        // 3. Verificar se o login já existe
+        // Verifica se login já existe
         Optional<Usuario> usuarioExistente = usuarioDAO.buscarPorLogin(usuario.getLogin());
         if (usuarioExistente.isPresent()) {
             throw new IllegalArgumentException("Login já cadastrado. Escolha outro.");
         }
         
-        // 4. Salvar no banco
+        // Salva no banco
         usuarioDAO.salvar(usuario);
     }
 }

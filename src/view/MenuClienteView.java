@@ -7,11 +7,7 @@ import service.FilmeService;
 import java.util.List;
 import java.util.Scanner;
 
-/**
- * Menu apresentado depois do login de um cliente.
- */
 public class MenuClienteView {
-
     private final Scanner scanner;
     private final FilmeService filmeService;
 

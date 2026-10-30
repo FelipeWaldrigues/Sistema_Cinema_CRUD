@@ -5,9 +5,6 @@ import model.Usuario;
 import java.sql.*;
 import java.util.Optional;
 
-/**
- * DAO responsável pelo acesso aos dados de usuários.
- */
 public class UsuarioDAO {
 
     public void salvar(Usuario usuario) throws SQLException {

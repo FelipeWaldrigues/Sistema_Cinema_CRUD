@@ -1,21 +1,14 @@
 package model;
 
-/**
- * Representa um cliente cadastrado no sistema.
- *
- * Nome, sobrenome, login e senha vêm diretamente do enunciado da Parte 1.
- * Os demais campos aparecem no protótipo do Figma e ficam preparados para
- * serem utilizados quando o grupo definir as regras finais.
- */
+// Cliente do sistema
 public class Usuario {
-
     private Long id;
     private String nome;
     private String sobrenome;
     private String login;
     private String senha;
 
-    // Campos previstos no protótipo do Figma.
+    // Campos do Figma (opcionais)
     private String email;
     private String telefone;
     private String cpf;

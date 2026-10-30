@@ -8,11 +8,7 @@ import service.LoginService;
 import java.util.Optional;
 import java.util.Scanner;
 
-/**
- * Tela/fluxo de login administrativo.
- */
 public class LoginAdminView {
-
     private final Scanner scanner;
     private final LoginService loginService;
 

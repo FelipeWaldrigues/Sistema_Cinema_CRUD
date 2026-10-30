@@ -8,11 +8,7 @@ import model.Usuario;
 import java.sql.SQLException;
 import java.util.Optional;
 
-/**
- * Centraliza os dois tipos de autenticação pedidos no enunciado.
- */
 public class LoginService {
-
     private final UsuarioDAO usuarioDAO;
     private final AdministradorDAO administradorDAO;
 

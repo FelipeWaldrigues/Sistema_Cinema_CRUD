@@ -1,10 +1,6 @@
 package model;
 
-/**
- * Representa um usuário administrativo do sistema.
- */
 public class Administrador {
-
     private Long id;
     private String nome;
     private String login;

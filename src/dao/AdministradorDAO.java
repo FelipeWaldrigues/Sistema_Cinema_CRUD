@@ -9,9 +9,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Optional;
 
-/**
- * DAO responsável pelo cadastro e autenticação administrativa.
- */
 public class AdministradorDAO {
 
     public void salvar(Administrador admin) throws SQLException {
