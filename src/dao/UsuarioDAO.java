@@ -5,7 +5,7 @@ import model.Usuario;
 import java.sql.*;
 import java.util.Optional;
 
-public class UsuarioDAO {
+public class UsuarioDAO implements IUsuarioDAO {
 
     public void salvar(Usuario usuario) throws SQLException {
         String sql = "INSERT INTO usuario (nome, sobrenome, login, senha, email, telefone, cpf, endereco, caixa_postal) " +

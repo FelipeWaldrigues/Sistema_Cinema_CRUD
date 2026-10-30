@@ -9,7 +9,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Optional;
 
-public class AdministradorDAO {
+public class AdministradorDAO implements IAdministradorDAO {
 
     public void salvar(Administrador admin) throws SQLException {
         String sql = "INSERT INTO administrador (nome, login, senha) VALUES (?, ?, ?)";

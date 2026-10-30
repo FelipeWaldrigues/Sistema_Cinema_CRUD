@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-public class FilmeDAO {
+public class FilmeDAO implements IFilmeDAO {
 
     public Optional<Filme> buscarPorId(long id) throws SQLException {
         String sql = "SELECT * FROM filme WHERE id = ?";
